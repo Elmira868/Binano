@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'Vazir-Light';
+        font-display: swap;
+        src: url(../public/asset/fonts/Vazir-Light.woff2) format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Vazir-Medium';
+        font-display: swap;
+        src: url(../public/asset/fonts/Vazir-Medium.woff2) format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Vazir-Bold';
+        font-display: swap;
+        src: url(../public/asset/fonts/Vazir-Bold.woff2) format('woff2');
+    }
+}
+
+body{
+    font-family: 'Vazir-Medium';
+}
+
+html{
+    direction: rtl;
+}
+
+@layer components{
+    .centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
+
+@layer utilities{
+    .Top-navbar__right-parent:hover .Top-navbar__right-child{
+        @apply text-red-500;
+    }
+}
