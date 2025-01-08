@@ -37,10 +37,194 @@ html{
         align-items: center;
        
     }
+
+    .submenu{
+      display: none;
+    }
 }
 
 @layer utilities{
+
+  .submenu.active {
+    display: block;
+  }
+
+.submenu-hover:hover{
+  @apply bg-white opacity-55;
+}
+
     .Top-navbar__right-parent:hover .Top-navbar__right-child{
         @apply text-red-500;
     }
+
+    .menu-right__link:hover{
+        @apply text-gray-500;
+    }
+
+    .circles-hover{
+        position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+
+    }
+
+    .circles-hover::before,
+.circles-hover::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-effect::before {
+  width: 100px;
+  height: 100px;
+ border: 2px solid rgba(255, 255, 255, 0.2);
+  top: -25px;
+  left: -20px;
+}
+
+.hover-effect::after {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: 0px;
+  left: 10px;
+}
+
+.hover-effect:hover::before,
+.hover-effect:hover::after {
+  opacity: 1;
+  transform: scale(1.2); 
+}
+
+.hover-effect:hover {
+  color: #000; 
+}::before {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    top: -20px;
+    left: -20px;
+  }
+  
+  .hover-effect::before {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: -20px;
+  left: -20px;
+}
+
+.hover-effect::after {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: 10px;
+  left: 10px;
+}
+
+.hover-effect:hover::before,
+.hover-effect:hover::after {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.hover-effect:hover {
+  color: #000; 
+}::after {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    top: 10px;
+    left: 10px;
+  }
+  
+  .hover-effect::before {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: -20px;
+  left: -20px;
+}
+
+.hover-effect::after {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: 10px;
+  left: 10px;
+}
+
+.hover-effect:hover::before,
+.hover-effect:hover::after {
+  opacity: 1;
+  transform: scale(1.2); 
+}
+
+.hover-effect:hover {
+  color: #000; 
+}:hover::before,
+  .hover-effect::before {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: -20px;
+  left: -20px;
+}
+
+.hover-effect::after {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: 10px;
+  left: 10px;
+}
+
+.hover-effect:hover::before,
+.hover-effect:hover::after {
+  opacity: 1;
+  transform: scale(1.2); 
+}
+
+.hover-effect:hover {
+  color: #000; 
+}:hover::after {
+    opacity: 1;
+    transform: scale(1.2); 
+  }
+  
+  .hover-effect::before {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: -20px;
+  left: -20px;
+}
+
+.hover-effect::after {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  top: 10px;
+  left: 10px;
+}
+
+.hover-effect:hover::before,
+.hover-effect:hover::after {
+  opacity: 1;
+  transform: scale(1.2); 
+}
+
+.hover-effect:hover {
+  color: #000; 
+}:hover {
+    color: #000;
+  }
+
 }

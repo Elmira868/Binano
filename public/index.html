@@ -10,6 +10,21 @@
     <!-- Svg -->
     <svg class="hidden">
       <symbol
+        id="chevron-down"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </symbol>
+
+      <symbol
         id="search"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -43,13 +58,12 @@
     <!-- Header-top-navbar -->
     <header>
       <!-- Top-navbar-container -->
-      <div class="flex flex-col centered md:flex-row md:justify-between bg-zinc-950 p-2">
+      <div
+        class="flex flex-col centered md:flex-row md:justify-between bg-zinc-950 p-2"
+      >
         <!-- Top-navbar-right -->
         <div class="flex gap-x-2 md:gap-x-8">
-          <a
-            href="#"
-            class="flex  md:mr-6 gap-x-1.5 Top-navbar__right-parent"
-          >
+          <a href="#" class="flex md:mr-6 gap-x-1.5 Top-navbar__right-parent">
             <span class="text-gray-600 centered text-sm Top-navbar__right-child"
               >0</span
             >
@@ -77,6 +91,92 @@
           <a class="hover:text-white" href="#"> ساخت حساب کاربری </a>
         </div>
       </div>
+      <!-- Menu -->
+      <div class="md:flex hidden justify-between bg-zinc-900 lg:p-16">
+        <!-- Menu-right -->
+        <div>
+          <ul class="hidden md:flex gap-x-10 p-2 has-[a]:text-lg has-[a]:text-white">
+            <li class="md:mr-8 lg:mr-0"><a class="menu-right__link" href="#">خانه</a></li>
+            <li class="relative catalog">
+              <a href="#">
+                <div class="flex gap-x-1 centered">
+                  <span class="menu-right__link"> فهرست </span>
+                  <svg class="w-3 h-3 text-white menu-right__link">
+                    <use href="#chevron-down"></use>
+                  </svg>
+                </div>
+                <!-- Submenu -->
+                <ul
+                  class="absolute has-[a]:text-gray-600 has-[a]:text-sm bg-zinc-950 w-40 p-2 text-right submenu"
+                >
+                  <li class="submenu-hover"><a href="#">برند ها</a></li>
+                  <li class="submenu-hover mt-1"><a href="#">مردانه</a></li>
+                  <li class="submenu-hover mt-1"><a href="#">زنانه</a></li>
+                  <li class="submenu-hover mt-1"><a href="#">مدل</a></li>
+                </ul>
+              </a>
+            </li>
+            <li><a class="menu-right__link" href="#">وبلاگ</a></li>
+            <li><a class="menu-right__link" href="#">درباره ی ما</a></li>
+            <li><a class="menu-right__link" href="#">ارتباط با ما</a></li>
+          </ul>
+        </div>
+        <!-- Menu-left -->
+        <div class="centered lg:circles-hover hidden">
+          <h1 class="hidden lg:block text-white text-xl md:text-3xl lg:text-5xl font-Vazir-Light">بینانو</h1>
+        </div>
+      </div>
+
+      <h1 class="block md:hidden bg-zinc-950 text-white text-center text-xl md:text-3xl lg:text-5xl font-Vazir-Light p-2">بینانو</h1>
+      
+       <!-- Navigator -->
+       <div class="md:hidden block">
+        <select class="w-full border border-black" id="select-nav">
+          <option value="home">
+            <a href="#">
+              خانه
+            </a>
+          </option>
+          <option value="blog">
+            <a href="#">
+            وبلاگ  
+            </a>
+          </option>
+          <option value="about">
+            <a href="#">
+              درباره ی ما
+            </a>
+          </option>
+          <option value="contact">
+            <a href="#">
+              ارتباط با ما
+            </a>
+          </option>
+          <option value="brand">
+            <a href="#">
+              برند ها
+            </a>
+          </option>
+          <option value="style">
+            <a href="#">
+              استایل
+            </a>
+          </option>
+          <option value="woman">
+            <a href="#">
+              زنانه
+            </a>
+          </option>
+          <option value="man">
+            <a href="#">
+              مردانه
+            </a>
+          </option>
+        </select>
+       
+       </div>
     </header>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
