@@ -31,6 +31,26 @@ html{
 }
 
 @layer components{
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
     .centered{
         display: flex;
         justify-content: center;
@@ -47,6 +67,10 @@ html{
 
   .submenu.active {
     display: block;
+  }
+
+  .circles-hover__remove::before, .circles-hover__remove::after {
+    content: none !important;
   }
 
 .submenu-hover:hover{

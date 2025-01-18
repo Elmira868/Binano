@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>بینانو</title>
+    <link rel="stylesheet" href="./asset/vendor/Swiper/swiper.css">
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
@@ -95,8 +96,12 @@
       <div class="md:flex hidden justify-between bg-zinc-900 lg:p-16">
         <!-- Menu-right -->
         <div>
-          <ul class="hidden md:flex gap-x-10 p-2 has-[a]:text-lg has-[a]:text-white">
-            <li class="md:mr-8 lg:mr-0"><a class="menu-right__link" href="#">خانه</a></li>
+          <ul
+            class="hidden md:flex gap-x-10 p-2 has-[a]:text-lg has-[a]:text-white"
+          >
+            <li class="md:mr-8 lg:mr-0">
+              <a class="menu-right__link" href="#">خانه</a>
+            </li>
             <li class="relative catalog">
               <a href="#">
                 <div class="flex gap-x-1 centered">
@@ -107,7 +112,7 @@
                 </div>
                 <!-- Submenu -->
                 <ul
-                  class="absolute has-[a]:text-gray-600 has-[a]:text-sm bg-zinc-950 w-40 p-2 text-right submenu"
+                  class="absolute has-[a]:text-gray-600 has-[a]:text-sm bg-zinc-950 w-40 p-2 z-50 text-right submenu"
                 >
                   <li class="submenu-hover"><a href="#">برند ها</a></li>
                   <li class="submenu-hover mt-1"><a href="#">مردانه</a></li>
@@ -122,61 +127,114 @@
           </ul>
         </div>
         <!-- Menu-left -->
-        <div class="centered lg:circles-hover hidden">
-          <h1 class="hidden lg:block text-white text-xl md:text-3xl lg:text-5xl font-Vazir-Light">بینانو</h1>
+        <div class="centered max-[1023px]:before:content-none max-[1023px]:after:content-none circles-hover">
+          <h1
+            class="hidden lg:block text-white text-xl md:text-3xl lg:text-5xl font-Vazir-Light"
+          >
+            بینانو
+          </h1>
         </div>
       </div>
 
-      <h1 class="block md:hidden bg-zinc-950 text-white text-center text-xl md:text-3xl lg:text-5xl font-Vazir-Light p-2">بینانو</h1>
-      
-       <!-- Navigator -->
-       <div class="md:hidden block">
-        <select class="w-full border border-black" id="select-nav">
-          <option value="home">
-            <a href="#">
-              خانه
-            </a>
+      <h1
+        class="block md:hidden bg-zinc-950 text-white text-center text-xl md:text-3xl lg:text-5xl font-Vazir-Light p-2"
+      >
+        بینانو
+      </h1>
+
+      <!-- Navigator -->
+      <div class="md:hidden flex justify-center">
+        <select class="w-24 mt-1 border border-zinc-950 has-[option]:text-[12px]" id="select-nav">
+          <option value="خانه">
+            <a href="#"> خانه </a>
           </option>
-          <option value="blog">
-            <a href="#">
-            وبلاگ  
-            </a>
+          <option value="وبلاگ">
+            <a href="#"> وبلاگ </a>
           </option>
-          <option value="about">
-            <a href="#">
-              درباره ی ما
-            </a>
+          <option value="درباره ی ما">
+            <a href="#"> درباره ی ما </a>
           </option>
-          <option value="contact">
-            <a href="#">
-              ارتباط با ما
-            </a>
+          <option value="ارتباط با ما">
+            <a href="#"> ارتباط با ما </a>
           </option>
-          <option value="brand">
-            <a href="#">
-              برند ها
-            </a>
+          <option value="برندها">
+            <a href="#"> برند ها </a>
           </option>
-          <option value="style">
-            <a href="#">
-              استایل
-            </a>
+          <option value="استایل">
+            <a href="#"> استایل </a>
           </option>
-          <option value="woman">
-            <a href="#">
-              زنانه
-            </a>
+          <option value="زنانه">
+            <a href="#"> زنانه </a>
           </option>
-          <option value="man">
-            <a href="#">
-              مردانه
-            </a>
+          <option value="مردانه">
+            <a href="#"> مردانه </a>
           </option>
         </select>
-       
-       </div>
+      </div>
     </header>
+    
+     <main>
+      <!-- Hero-section -->
+  <div class="swiper mySwiper hidden md:block">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide relative">
+        <img src="asset/img/main-page/slider/slide1_image.webp" alt="slide-1" />
+        <div class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20">
+          <h1 class="hover:text-white">
+            یک فروشگاه
+          </h1>
+          <h1 class="mt-4 mb-4 hover:text-white">
+            برای
+          </h1>
+          <h1 class="hover:text-white">
+            عینک
+          </h1>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/img/main-page/slider/slide2_image.webp" alt="slide-2" />
+        <div class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20">
+          <h1 class="hover:text-white">
+            انتخاب 
+          </h1>
+          <h1 class="mt-4 mb-4 hover:text-white">
+            گسترده ای از
+          </h1>
+          <h1 class="hover:text-white">
+           عینک ها
+          </h1>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/img/main-page/slider/slide3_image.webp" alt="slide-3" />
+        <div class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20">
+          <h1 class="hover:text-white">
+            از چشمان
+          </h1>
+          <h1 class="mt-4 mb-4 hover:text-white">
+          خود دربرابر
+          </h1>
+          <h1 class="hover:text-white">
+           خورشید محافظت کنید
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+     </main>
 
+    <script src="./asset/vendor/Swiper/swiper.js"></script>
+     <!-- Initialize Swiper -->
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
     <script src="js/app.js"></script>
   </body>
 </html>
