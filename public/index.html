@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>بینانو</title>
-    <link rel="stylesheet" href="./asset/vendor/Swiper/swiper.css">
+    <link rel="stylesheet" href="./asset/vendor/Swiper/swiper.css" />
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
@@ -127,7 +127,9 @@
           </ul>
         </div>
         <!-- Menu-left -->
-        <div class="centered max-[1023px]:before:content-none max-[1023px]:after:content-none circles-hover">
+        <div
+          class="centered max-[1023px]:before:content-none max-[1023px]:after:content-none circles-hover"
+        >
           <h1
             class="hidden lg:block text-white text-xl md:text-3xl lg:text-5xl font-Vazir-Light"
           >
@@ -144,7 +146,10 @@
 
       <!-- Navigator -->
       <div class="md:hidden flex justify-center">
-        <select class="w-24 mt-1 border border-zinc-950 has-[option]:text-[12px]" id="select-nav">
+        <select
+          class="w-24 mt-1 border border-zinc-950 has-[option]:text-[12px]"
+          id="select-nav"
+        >
           <option value="خانه">
             <a href="#"> خانه </a>
           </option>
@@ -172,69 +177,81 @@
         </select>
       </div>
     </header>
-    
-     <main>
+
+    <main>
       <!-- Hero-section -->
-  <div class="swiper mySwiper hidden md:block">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide relative">
-        <img src="asset/img/main-page/slider/slide1_image.webp" alt="slide-1" />
-        <div class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20">
-          <h1 class="hover:text-white">
-            یک فروشگاه
-          </h1>
-          <h1 class="mt-4 mb-4 hover:text-white">
-            برای
-          </h1>
-          <h1 class="hover:text-white">
-            عینک
-          </h1>
+      <div class="swiper mySwiper hidden md:block">
+        <div class="swiper-wrapper">
+          <!-- Slide-1 -->
+          <div class="swiper-slide relative">
+            <img
+              src="asset/img/main-page/slider/slide1_image.webp"
+              alt="slide-1"
+            />
+            <div
+              class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20"
+            >
+              <h1 class="hover:text-white">یک فروشگاه</h1>
+              <h1 class="mt-4 mb-4 hover:text-white">برای</h1>
+              <h1 class="hover:text-white">عینک</h1>
+            </div>
+          </div>
+          <!-- Slide-2 -->
+          <div class="swiper-slide">
+            <img
+              src="asset/img/main-page/slider/slide2_image.webp"
+              alt="slide-2"
+            />
+            <div
+              class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20"
+            >
+              <h1 class="hover:text-white">انتخاب</h1>
+              <h1 class="mt-4 mb-4 hover:text-white">گسترده ای از</h1>
+              <h1 class="hover:text-white">عینک ها</h1>
+            </div>
+          </div>
+          <!-- Slide-3 -->
+          <div class="swiper-slide">
+            <img
+              src="asset/img/main-page/slider/slide3_image.webp"
+              alt="slide-3"
+            />
+            <div
+              class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20"
+            >
+              <h1 class="hover:text-white">از چشمان</h1>
+              <h1 class="mt-4 mb-4 hover:text-white">خود دربرابر</h1>
+              <h1 class="hover:text-white">خورشید محافظت کنید</h1>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <div class="swiper-slide">
-        <img src="asset/img/main-page/slider/slide2_image.webp" alt="slide-2" />
-        <div class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20">
-          <h1 class="hover:text-white">
-            انتخاب 
-          </h1>
-          <h1 class="mt-4 mb-4 hover:text-white">
-            گسترده ای از
-          </h1>
-          <h1 class="hover:text-white">
-           عینک ها
-          </h1>
+      <!-- Featured Products -->
+      <section>
+        <h1
+          class="text-center mt-10 text-lg md:text-2xl xl:text-4xl font-Vazir-Light"
+        >
+          محصولات ویژه
+        </h1>
+        <div class="card-container flex flex-col justify-center items-center md:grid md:grid-cols-2 xl:grid-cols-4 md:mr-32 lg:mr-36 xl:mr-10  mt-10">
+          <!-- Featured products card -->
+          
         </div>
-      </div>
-      <div class="swiper-slide">
-        <img src="asset/img/main-page/slider/slide3_image.webp" alt="slide-3" />
-        <div class="absolute flex flex-col z-50 has-[h1]:text-white font-Vazir-Bold xl:text-5xl md:text-2xl xl:top-32 md:left-10 xl:left-20">
-          <h1 class="hover:text-white">
-            از چشمان
-          </h1>
-          <h1 class="mt-4 mb-4 hover:text-white">
-          خود دربرابر
-          </h1>
-          <h1 class="hover:text-white">
-           خورشید محافظت کنید
-          </h1>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-     </main>
+      </section>
+    </main>
 
     <script src="./asset/vendor/Swiper/swiper.js"></script>
-     <!-- Initialize Swiper -->
-  <script>
-    let swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>
