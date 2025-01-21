@@ -24,6 +24,8 @@ function applyPersianDigits() {
   });
 }
 
+// Featured product Array
+
 const featuredProducts = [
   { id: 1, img: './asset/img/main-page/Featured-sunglasses-1.jpg', title: 'عینک مدل 1', price: 532 },
   { id: 2, img: './asset/img/main-page/Featured-sunglasses-2.webp', title: 'عینک مدل 2', price: 738 },
@@ -36,10 +38,10 @@ const featuredProducts = [
 ];
 
 const cardContainer = document.querySelector('.card-container');
-
+// Create feature card
 featuredProducts.forEach(product => {
   cardContainer.insertAdjacentHTML('beforeend', `
-    <div class="w-60 h-auto p-2 mt-4">
+    <div class="w-60 h-auto p-2 mt-4 wow animate__animated animate__slideInUp">
       <img class="w-52 h-52" src="${product.img}" alt="${product.title}" />
       <h3 class="text-center text-base md:text-xl font-Vazir-Light mt-4 mb-4 number-fa">
         ${toPersianDigits(product.price)} تومان
@@ -54,6 +56,6 @@ featuredProducts.forEach(product => {
   `);
 });
 
-// اعمال تبدیل اعداد پس از افزودن عناصر جدید
+
 applyPersianDigits();
 
