@@ -8,6 +8,9 @@ module.exports = {
         "Vazir-Medium": "vazir-medium",
         "Vazir-Bold": "vazir-bold",
       },
+      colors:{
+        'primary-red':'#ff002b',
+      },
     },
   },
   plugins: [],
