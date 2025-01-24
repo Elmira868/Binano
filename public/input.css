@@ -66,6 +66,9 @@ html{
 
 @layer utilities{
 
+  svg:hover{
+    color: #fff;
+  }
 
   .submenu.active {
     display: block;
